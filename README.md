@@ -1,21 +1,28 @@
 # Kinyarwanda Voice Assistant
 
-This project is a mini Kinyarwanda Voice Assistant for Intelligent Robotics coursework.  
-It listens to Kinyarwanda audio, understands the question, and speaks back the answer.
+A simple Kinyarwanda-speaking voice assistant built for the Intelligent Robotics course.  
+It processes spoken Kinyarwanda input, interprets the question, and responds with synthesized speech.
 
-## How to Run
+##  How to Run
 
-1. Install the required libraries:
+1. **Install dependencies**:  
+   Make sure you have Python 3 installed. Then, install the required libraries:
 
-2. Place your audio questions in the `audio/` folder.
+   ```bash
+   pip install -r requirements.txt
 
-3. Run the project:
 
-4. The recognized text and spoken answers will be saved in the `outputs/` folder.
+ Add your audio:
+Place Kinyarwanda audio questions inside the audio/ directory.
 
-## Requirements
+Run the assistant:
+**Execute the main script to start processing:**
 
-- Python 3
-- whisper
-- gTTS
-- torch
+python main.py
+
+
+Requirements
+Python 3.x
+Whisper (for speech recognition)
+gTTS (for text-to-speech)
+PyTorch (backend for Whisper)
